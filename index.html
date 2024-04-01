@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Project</title>
+    <script src="https://kit.fontawesome.com/039126ff62.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <i class="fa-solid fa-rocket"></i>
+            <a href="#">El Niño</a>
+        </div>
+
+        <ul class="navbar__menu">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">질문과 답변</a></li>
+        </ul>
+
+        <ul class="navbar__icons">
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-square-x-twitter"></i></li>
+        </ul>
+        <a href="#" class="navbar__toggleBtn"> 
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+
+    <div class="search-container">
+        <form class="search-form">
+            <input type="text" placeholder="검색어를 입력하세요">
+            <button type="submit"><i class="fa-solid fa-search"></i></button>
+        </form>
+    </div>
+
+    <div class="category-wrapper">
+        <div class="category-container">
+            <h2>카테고리</h2>
+            <div class="category-list">
+                <div class="category-item">
+                    <i class="fa-solid fa-book fa-2x"></i>
+                    <span>공부</span>
+                    <div class="subcategories">
+                        <div class="subcategory-item"><a href="#" data-subcategory="언어">언어</a></div>
+                        <div class="subcategory-item"><a href="#" data-subcategory="수학">수학</a></div>
+                        <div class="subcategory-item"><a href="#" data-subcategory="과학">과학</a></div>
+                        <div class="subcategory-item"><a href="#" data-subcategory="사회">사회</a></div>
+                        <div class="subcategory-item"><a href="#" data-subcategory="기술">기술</a></div>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <i class="fa-solid fa-dumbbell fa-2x"></i>
+                    <span>운동</span>
+                    <div class="subcategories">
+                        <div class="subcategory-item"><a href="#" data-subcategory="유산소">유산소</a></div>
+                        <div class="subcategory-item"><a href="#" data-subcategory="근력">근력</a></div>
+                        <div class="subcategory-item"><a href="#" data-subcategory="스트레칭">스트레칭</a></div>
+                        <div class="subcategory-item"><a href="#" data-subcategory="요가">요가</a></div>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <i class="fa-solid fa-palette fa-2x"></i>
+                    <span>만화</span>
+                    <div class="subcategories">
+                        <div class="subcategory-item"><a href="#" data-subcategory="웹툰">웹툰</a></div>
+                        <div class="subcategory-item"><a href="#" data-subcategory="만화책">만화책</a></div>
+                        <div class="subcategory-item"><a href="#" data-subcategory="웹소설">웹소설</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="additional-content">
+        <div class="related-videos">
+            <!-- 맞춤 강의 및 영상 목록 -->
+            <h2>관련 영상 및 강의</h2>
+            <div class="video-container">
+                <div class="video-list">
+                    <!-- 각 영상 및 강의 아이템 -->
+                    <!-- 동적으로 생성될 내용 -->
+                </div>
+            </div>
+            <div class="controls">
+                <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <p>&copy; 2024 El Niño. All rights reserved.</p>
+            <ul class="footer__menu">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
