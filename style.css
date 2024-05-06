@@ -1,0 +1,392 @@
+/* 전체 페이지 스타일 */
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263343;
+    padding: 8px 12px;
+}
+
+.navbar__logo {
+    font-size: 24px;
+    color: white;
+}
+
+.navbar__logo i {
+    color: #d49466;
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-left: auto;
+}
+
+.navbar__menu li {
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+.navbar__menu li:hover {
+    background-color: #d49466;
+    border-radius: 4px;
+}
+
+.navbar__icons {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar__icons li {
+    padding: 8px 12px;
+}
+
+.navbar__icons li:hover {
+    color: #ffa500; 
+}
+
+.navbar__toggleBtn {
+    position: absolute;
+    right: 12px;
+    font-size: 24px;
+    color: #d49466;
+    display: none; /* 기본적으로 표시하지 않음 */
+}
+
+.search-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; 
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 24px; /* 검색창과 버튼에 둥근 테두리 적용 */
+    overflow: hidden; /* 둥근 테두리를 적용하기 위해 내용이 넘치는 것을 가림 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+}
+
+.search-form input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 24px; /* 검색창에 둥근 테두리 적용 */
+    background-color: #ffffff; /* 흰색 배경으로 변경 */
+    font-size: 16px;
+    outline: none; /* 포커스 시 테두리 제거 */
+}
+
+.search-form button {
+    background-color: #ffffff; /* 흰색 배경으로 변경 */
+    color: #757575; /* Google의 검색 버튼 색상과 유사하게 변경 */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 24px; /* 버튼에 둥근 테두리 적용 */
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #f2f2f2; /* 호버 시 배경색 변경 */
+}
+/* 스타일링 */
+.category-wrapper {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.category-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.category-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+}
+
+.category-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.subcategories {
+    display: none;
+    margin-top: 10px;
+}
+.subcategories.active {
+    display: block; /* 클릭 시 활성화되어 보이도록 설정 */
+}
+.subcategory-item {
+    margin-bottom: 5px;
+}
+
+.subcategory-item span {
+    color: #666;
+    font-size: 16px;
+}
+
+.category-item.active .subcategories {
+    display: block;
+}
+
+
+
+.category-container {
+    margin-top: 20px;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.category-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.category-item a:hover {
+    background-color: #f0f0f0;
+}
+
+.category-item.active a {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+.additional-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.related-videos, .related-materials, .trending-keywords {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #263343;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.video-list, .material-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.video-item, .material-item {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.video-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-item h3, .material-item h3 {
+    color: #263343;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.video-item p, .material-item p {
+    color: #757575;
+}
+
+.trending-keywords ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.trending-keywords li {
+    color: #263343;
+    font-size: 16px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.trending-keywords li:hover {
+    text-decoration: underline;
+}
+
+/* 검색어 입력창에 마우스를 가져다 대었을 때의 스타일 */
+.search-form input[type="text"]:hover::before {
+    content: "실시간 검색어: 검색어 1, 검색어 2, 검색어 3"; /* 실시간 검색어 목록 */
+    position: absolute;
+    top: 50%;
+    left: -300px; /* 검색어 입력창 왼쪽으로 이동 */
+    background-color: #263343;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap; /* 텍스트가 너무 길 경우 줄바꿈 방지 */
+    opacity: 0; /* 기본적으로 투명하게 설정 */
+    transition: opacity 0.3s ease; /* 부드러운 효과를 위한 transition */
+}
+
+/* 검색어 입력창에 마우스를 가져다 대었을 때 툴팁을 보이도록 설정 */
+.search-form input[type="text"]:hover::before {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar__menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar__icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar__toggleBtn {
+        display: block; /* 화면이 작을 때만 표시 */
+    }
+
+    /* 토글된 상태일 때 메뉴와 아이콘을 표시 */
+    .navbar__menu.active,
+    .navbar__icons.active {
+        display: flex;
+    }
+    .video-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+    -ms-overflow-style: none;  /* Hide scrollbar for IE, Edge */
+}
+
+.video-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-right: 10px;
+}
+
+.carousel-navigation {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.prev, .next {
+    background-color: #f1f1f1;
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #ddd;
+}
+
+}
+/* footer 스타일 */
+.footer {
+    background-color: #263343;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer__content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer__menu li {
+    margin-right: 20px;
+}
+
+.footer__menu li:last-child {
+    margin-right: 0;
+}
+
+.footer__menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer__menu li a:hover {
+    color: #d49466;
+}

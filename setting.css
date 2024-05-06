@@ -1,0 +1,62 @@
+/* 프로필 페이지 스타일 */
+.profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    margin-top: 20px;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+.info-item strong {
+    font-weight: bold;
+}
+
+.info-item span {
+    margin-left: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.edit-profile-btn, .delete-account-btn {
+    background-color: #263343;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit-profile-btn:hover, .delete-account-btn:hover {
+    background-color: #1a2633;
+}
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: #263343;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.buttons button:hover {
+    background-color: #1a2633;
+}

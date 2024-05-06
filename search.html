@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-AeGx7Ptm1zJWtMaAy0zf0mfcOjRyE6c8kUz+hj7l3zC5Z5NMIpb9qjW3B+Xnv87D" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Search Results</title>
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <div class="search-container">
+        <form class="search-form">
+            <input type="text" placeholder="검색어를 입력하세요">
+            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+    <main>
+        <div class="search-results">
+            <h2>검색 결과 목록</h2>
+            <ul>
+                <li>
+                    <h3>검색 결과 1</h3>
+                    <p>검색 결과에 대한 설명이 여기에 들어갑니다.</p>
+                </li>
+                <li>
+                    <h3>검색 결과 2</h3>
+                    <p>검색 결과에 대한 설명이 여기에 들어갑니다.</p>
+                </li>
+                <li>
+                    <h3>검색 결과 3</h3>
+                    <p>검색 결과에 대한 설명이 여기에 들어갑니다.</p>
+                </li>
+                <!-- 추가 검색 결과들 -->
+            </ul>
+        </div>
+        <div class="search-filters">
+            <h2>검색 필터</h2>
+            <form>
+                <label for="category">카테고리:</label>
+                <select id="category" name="category">
+                    <option value="study">공부</option>
+                    <option value="exercise">운동</option>
+                    <option value="comics">만화</option>
+                </select>
+                <button type="submit">필터 적용</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 El Niño. All rights reserved.</p>
+    </footer>
+</body>
+</html>

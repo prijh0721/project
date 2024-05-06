@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>프로필</title>
+</head>
+<body>
+    <div class="profile-container">
+        <h1>내 프로필</h1>
+        <form class="profile-form"> <!-- 프로필 폼에 profile-form 클래스 추가 -->
+            <div class="form-group">
+                <label for="username">사용자 이름:</label>
+                <input type="text" id="username" name="username" readonly>
+            </div>
+            <div class="form-group">
+                <label for="email">이메일:</label>
+                <input type="email" id="email" name="email" readonly>
+            </div>
+            <div class="form-group">
+                <label for="age">나이:</label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div class="form-group">
+                <label for="gender">성별:</label>
+                <select id="gender" name="gender">
+                    <option value="male">남성</option>
+                    <option value="female">여성</option>
+                    <option value="other">기타</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="interests">관심 분야:</label>
+                <select id="interests" name="interests">
+                    <option value="study">공부</option>
+                    <option value="exercise">운동</option>
+                    <option value="comics">만화</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bio">소개:</label>
+                <textarea id="bio" name="bio" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="profileImage">프로필 이미지:</label>
+                <input type="file" id="profileImage" name="profileImage">
+            </div>
+            <button type="submit">저장</button>
+        </form>
+    </div>
+</body>
+</html>
